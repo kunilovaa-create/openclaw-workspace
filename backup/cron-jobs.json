@@ -2,16 +2,15 @@
   "version": 1,
   "jobs": [
     {
-      "id": "94afd055-b88b-48ae-996a-566d0a4cd3ff",
+      "id": "4f85277e-e971-4baf-a3b4-f3850744e668",
       "name": "pulmicort",
       "description": "Пульмикорт ежедневно 10:00 КРС",
       "enabled": true,
-      "createdAtMs": 1773143974482,
-      "updatedAtMs": 1773716406179,
+      "createdAtMs": 1774712587339,
+      "updatedAtMs": 1774753209069,
       "schedule": {
         "kind": "cron",
-        "expr": "0 3 * * *",
-        "staggerMs": 0
+        "expr": "0 3 * * *"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -25,27 +24,26 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1773802800000,
-        "lastRunAtMs": 1773716400005,
+        "nextRunAtMs": 1774839600000,
+        "lastRunAtMs": 1774753200010,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 6174,
+        "lastDurationMs": 9059,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
       }
     },
     {
-      "id": "ea247367-832e-48f7-906b-ff25c66e3b95",
+      "id": "acc8aeed-0fcc-4633-b6be-cfac9eaf3b72",
       "name": "alisa-reading",
       "description": "Алиса чтение 14:00 КРС",
       "enabled": true,
-      "createdAtMs": 1773143989503,
-      "updatedAtMs": 1773644409490,
+      "createdAtMs": 1774712653047,
+      "updatedAtMs": 1774712653047,
       "schedule": {
         "kind": "cron",
-        "expr": "0 7 * * *",
-        "staggerMs": 0
+        "expr": "0 7 * * *"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -59,61 +57,19 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1773730800000,
-        "lastRunAtMs": 1773644400006,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 9484,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1774767600000
       }
     },
     {
-      "id": "d51f4faf-cd6a-41c2-8c7c-0b21272d4c2e",
-      "name": "masha-psychologist-hw",
-      "description": "Маша ДЗ от психолога 21:00 КРС",
-      "enabled": true,
-      "createdAtMs": 1773143994495,
-      "updatedAtMs": 1773669607198,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 14 * * *",
-        "staggerMs": 0
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Маше сделать ДЗ от психолога! 📝"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1773756000000,
-        "lastRunAtMs": 1773669600032,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 7166,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "03c85997-0472-415d-a50e-9f6dc9718060",
+      "id": "db0828bc-aee8-4c8d-9ff5-c101a068cc8a",
       "name": "cough-pill",
       "description": "Таблетка от кашля 22:00 КРС",
       "enabled": true,
-      "createdAtMs": 1773143997049,
-      "updatedAtMs": 1773673207300,
+      "createdAtMs": 1774712694267,
+      "updatedAtMs": 1774712694267,
       "schedule": {
         "kind": "cron",
-        "expr": "0 15 * * *",
-        "staggerMs": 0
+        "expr": "0 15 * * *"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -127,61 +83,19 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1773759600000,
-        "lastRunAtMs": 1773673200008,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 7292,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1774796400000
       }
     },
     {
-      "id": "a10eea1c-c1df-44c1-b0bb-b610b3635f0d",
-      "name": "masha-psychologist-tue",
-      "description": "Маша психолог вторники марта 11:00 КРС",
-      "enabled": true,
-      "createdAtMs": 1773144002157,
-      "updatedAtMs": 1773720008391,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 4 * 3 2",
-        "staggerMs": 0
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Маше сегодня к психологу в 16:00! 🧠"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1774324800000,
-        "lastRunAtMs": 1773720000006,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 8385,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "f472e6b5-ff34-45e8-94e7-5e96545bae5e",
+      "id": "480f2eb0-8e9c-4866-94a6-0972a1c17acb",
       "name": "utility-meters",
       "description": "Показания счётчиков 20-е число 11:00 КРС",
       "enabled": true,
-      "createdAtMs": 1773144004709,
-      "updatedAtMs": 1773144004709,
+      "createdAtMs": 1774712730888,
+      "updatedAtMs": 1774712730888,
       "schedule": {
         "kind": "cron",
-        "expr": "0 4 20 * *",
-        "staggerMs": 0
+        "expr": "0 4 20 * *"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -195,25 +109,51 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1773979200000
+        "nextRunAtMs": 1776657600000
       }
     },
     {
-      "id": "dd9c5322-b93c-4561-a045-1cd3ab1645a4",
-      "name": "stop-pulmicort",
+      "id": "c5f51c01-07cc-42e5-895d-7d346eefc762",
+      "name": "daily-backup",
+      "description": "Тихий ежедневный бэкап, сообщать только об ошибках",
       "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1773144044838,
-      "updatedAtMs": 1773144044838,
+      "createdAtMs": 1774712752239,
+      "updatedAtMs": 1774712752239,
       "schedule": {
-        "kind": "at",
-        "at": "2026-03-19T03:00:00.000Z"
+        "kind": "cron",
+        "expr": "0 5 * * *"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Пульмикорт 14 дней прошло — отключаю напоминание. Если нужно продлить, скажи!"
+        "message": "Сделай бэкап: 1) cp /root/.openclaw/cron/jobs.json /root/.openclaw/workspace/backup/cron-jobs.json 2) cd /root/.openclaw/workspace && git add -A && git diff --cached --quiet || git commit -m 'daily backup' && git push origin master && git push origin master:main. Если всё ок — молчи. Если ошибка — напиши Анечке в Telegram (401302949) что бэкап не удался."
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1774760400000,
+        "runningAtMs": 1774760400003
+      }
+    },
+    {
+      "id": "c3415c51-41af-4490-94de-f8b881a408d1",
+      "name": "alisa-school-tue",
+      "description": "Каждый вторник 10:00 КРС",
+      "enabled": true,
+      "createdAtMs": 1774712775475,
+      "updatedAtMs": 1774712775475,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * 2"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Алиса заканчивает учиться в 13:00! 🏫"
       },
       "delivery": {
         "mode": "announce",
@@ -221,16 +161,83 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1773889200000
+        "nextRunAtMs": 1774926000000
       }
     },
     {
-      "id": "8f749c1f-9ae2-4d77-93a7-d4187a97b698",
+      "id": "a49c19b9-039b-4a1d-b6df-8a665d48fea8",
+      "name": "healthcheck",
+      "description": "Проверка gateway каждые 5 минут",
+      "enabled": true,
+      "createdAtMs": 1774712794763,
+      "updatedAtMs": 1774760212255,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 300000,
+        "anchorMs": 1774712794763
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Проверь жив ли gateway: запусти bash /root/.openclaw/healthcheck.sh. Если вывод содержит RESTART FAILED — напиши Анечке в Telegram (401302949) что gateway упал и не смог подняться. Если Gateway OK или успешно перезапустился — молчи."
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1774760496612,
+        "lastRunAtMs": 1774760196612,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 15643,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "2bd438ac-7954-49bd-8a3e-4f4c3001e08a",
+      "name": "masha-forlax",
+      "description": "Форлакс каждый день 8:30 КРС",
+      "enabled": true,
+      "createdAtMs": 1774712808550,
+      "updatedAtMs": 1774747810355,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 1 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Маше пить форлакс! 💊"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1774834200000,
+        "lastRunAtMs": 1774747800011,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 10344,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "84ec31af-73ab-4f9d-9456-d2dfd3564b09",
       "name": "physed-cert",
+      "description": "Справка по физре",
       "enabled": true,
       "deleteAfterRun": true,
-      "createdAtMs": 1773144047289,
-      "updatedAtMs": 1773144047289,
+      "createdAtMs": 1774712828196,
+      "updatedAtMs": 1774712828196,
       "schedule": {
         "kind": "at",
         "at": "2026-04-05T05:00:00.000Z"
@@ -251,12 +258,13 @@
       }
     },
     {
-      "id": "06287486-02f7-4e8f-86c4-5ddd926a6e1d",
+      "id": "8d39d924-3083-4062-8b43-38c2c5b07cd2",
       "name": "masha-cyclovita",
+      "description": "Купить Маше Цикловита",
       "enabled": true,
       "deleteAfterRun": true,
-      "createdAtMs": 1773144049755,
-      "updatedAtMs": 1773144049755,
+      "createdAtMs": 1774712847424,
+      "updatedAtMs": 1774712847424,
       "schedule": {
         "kind": "at",
         "at": "2026-04-06T04:00:00.000Z"
@@ -277,12 +285,13 @@
       }
     },
     {
-      "id": "402ce6be-3a61-40fa-bfdc-5ca6e4cdbb06",
+      "id": "88f40ded-63b9-4515-823f-774aa0f9a59d",
       "name": "polyoxidonium",
+      "description": "Начать пить полиоксидоний",
       "enabled": true,
       "deleteAfterRun": true,
-      "createdAtMs": 1773144052301,
-      "updatedAtMs": 1773144052301,
+      "createdAtMs": 1774712865535,
+      "updatedAtMs": 1774712865535,
       "schedule": {
         "kind": "at",
         "at": "2026-06-26T04:00:00.000Z"
@@ -303,56 +312,47 @@
       }
     },
     {
-      "id": "86eb84c5-830b-4ce5-b44b-64084caf018c",
-      "name": "daily-backup",
-      "description": "Тихий ежедневный бэкап, сообщать только об ошибках",
+      "id": "07a7ae12-3549-43be-a826-5c258030c168",
+      "name": "masha-psychologist-hw",
+      "description": "Маша ДЗ от психолога 21:00 КРС",
       "enabled": true,
-      "createdAtMs": 1773144297313,
-      "updatedAtMs": 1773637212776,
+      "createdAtMs": 1774713004585,
+      "updatedAtMs": 1774713004585,
       "schedule": {
         "kind": "cron",
-        "expr": "0 5 * * *",
-        "staggerMs": 0
+        "expr": "0 14 * * *"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Сделай бэкап: 1) cp /root/.openclaw/cron/jobs.json /root/.openclaw/workspace/backup/cron-jobs.json 2) cd /root/.openclaw/workspace && git add -A && git diff --cached --quiet || git commit -m 'daily backup' && git push origin master && git push origin master:main. Если всё ок — молчи. Если ошибка — напиши Анечке в Telegram (401302949) что бэкап не удался."
+        "message": "Маше сделать ДЗ от психолога! 📝"
       },
       "delivery": {
-        "mode": "none",
-        "channel": "last"
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1773723600000,
-        "lastRunAtMs": 1773637200007,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 12769,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1773723600027
+        "nextRunAtMs": 1774792800000
       }
     },
     {
-      "id": "f42b883d-beff-4569-8bef-18cfd2147e68",
-      "name": "alisa-school-tue",
-      "description": "Каждый вторник 10:00 КРС",
+      "id": "ea471fb4-99a4-410b-9ff4-33aad73c9b24",
+      "name": "masha-psychologist-tue",
+      "description": "Маша психолог вторники март",
       "enabled": true,
-      "createdAtMs": 1773153986490,
-      "updatedAtMs": 1773716414947,
+      "createdAtMs": 1774713031739,
+      "updatedAtMs": 1774713031739,
       "schedule": {
         "kind": "cron",
-        "expr": "0 3 * * 2",
-        "staggerMs": 0
+        "expr": "0 4 * 3 2"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Алиса заканчивает учиться в 13:00! 🏫"
+        "message": "Маше сегодня к психологу в 16:00! 🧠"
       },
       "delivery": {
         "mode": "announce",
@@ -360,159 +360,7 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1774321200000,
-        "lastRunAtMs": 1773716406179,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 8768,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "c6fd6f79-b52e-451a-9b5a-00ac7949cc08",
-      "name": "healthcheck",
-      "description": "Проверка gateway каждые 5 минут",
-      "enabled": true,
-      "createdAtMs": 1773297809079,
-      "updatedAtMs": 1773723529839,
-      "schedule": {
-        "kind": "every",
-        "everyMs": 300000,
-        "anchorMs": 1773297809079
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Проверь жив ли gateway: запусти bash /root/.openclaw/healthcheck.sh. Если вывод содержит RESTART FAILED — напиши Анечке в Telegram (401302949) что gateway упал и не смог подняться. Если Gateway OK или успешно перезапустился — молчи."
-      },
-      "delivery": {
-        "mode": "none",
-        "channel": "last"
-      },
-      "state": {
-        "nextRunAtMs": 1773723821796,
-        "lastRunAtMs": 1773723521796,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 8043,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "5e96c4c1-edc8-4030-9572-63e97cd7861f",
-      "name": "psychiatrist-reminder",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1773298609671,
-      "updatedAtMs": 1773298773041,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-17T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Завтра психиатр в 15:00 на Богарда 89! 🏥"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1773734400000
-      }
-    },
-    {
-      "id": "a84af876-284b-4e1f-9133-5202dd68a1c4",
-      "name": "ask-sasha-uzi",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1773401264545,
-      "updatedAtMs": 1773401264545,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-20T09:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Написать Саше: как УЗИ, что там по УЗИ? 📱"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1773997200000
-      }
-    },
-    {
-      "id": "0852f77c-21b1-41de-9ddd-dbc215fae508",
-      "name": "masha-forlax",
-      "description": "Форлакс каждый день 8:30 КРС",
-      "enabled": true,
-      "createdAtMs": 1773494985342,
-      "updatedAtMs": 1773711005373,
-      "schedule": {
-        "kind": "cron",
-        "expr": "30 1 * * *",
-        "staggerMs": 0
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Маше пить форлакс! 💊"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1773797400000,
-        "lastRunAtMs": 1773711000005,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 5368,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "5a75869f-1293-4efe-831f-05f0733b4e95",
-      "name": "kanikuly-start",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1773708717910,
-      "updatedAtMs": 1773708717910,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-23T01:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Каникулы начались! 🎉 До 30 марта."
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1774227600000
+        "nextRunAtMs": 1774929600000
       }
     }
   ]
