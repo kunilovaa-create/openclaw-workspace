@@ -2,78 +2,12 @@
   "version": 1,
   "jobs": [
     {
-      "id": "4f85277e-e971-4baf-a3b4-f3850744e668",
-      "name": "pulmicort",
-      "description": "Пульмикорт ежедневно 10:00 КРС",
-      "enabled": true,
-      "createdAtMs": 1774712587339,
-      "updatedAtMs": 1774839617547,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 3 * * *"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "ДЫШИ ПУЛЬМИКОРТОМ!! 💨"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1774926000000,
-        "lastRunAtMs": 1774839600017,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 17530,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "Error: Outbound not configured for channel: telegram"
-      }
-    },
-    {
-      "id": "acc8aeed-0fcc-4633-b6be-cfac9eaf3b72",
-      "name": "alisa-reading",
-      "description": "Алиса чтение 14:00 КРС",
-      "enabled": true,
-      "createdAtMs": 1774712653047,
-      "updatedAtMs": 1774767621864,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 7 * * *"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Алисе надо почитать понемногу 📖"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1774854000000,
-        "lastRunAtMs": 1774767600015,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 21849,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
       "id": "db0828bc-aee8-4c8d-9ff5-c101a068cc8a",
       "name": "cough-pill",
       "description": "Таблетка от кашля 22:00 КРС",
       "enabled": true,
       "createdAtMs": 1774712694267,
-      "updatedAtMs": 1774796408816,
+      "updatedAtMs": 1774882803984,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -90,14 +24,16 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1774882800000,
-        "lastRunAtMs": 1774796400008,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 8808,
+        "nextRunAtMs": 1774969200000,
+        "lastRunAtMs": 1774882800012,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 3972,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "⚠️ openrouter (anthropic/claude-opus-4.6) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your openrouter billing dashboard and top up or switch to a different API key.",
+        "lastErrorReason": "billing"
       }
     },
     {
@@ -132,7 +68,7 @@
       "description": "Тихий ежедневный бэкап, сообщать только об ошибках",
       "enabled": true,
       "createdAtMs": 1774712752239,
-      "updatedAtMs": 1774760591910,
+      "updatedAtMs": 1774846823539,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -148,15 +84,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1774846800000,
-        "lastRunAtMs": 1774760400025,
+        "nextRunAtMs": 1774933200000,
+        "lastRunAtMs": 1774846800014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 191885,
+        "lastDurationMs": 23525,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1774846800005
+        "runningAtMs": 1774933200003
       }
     },
     {
@@ -165,7 +101,7 @@
       "description": "Каждый вторник 10:00 КРС",
       "enabled": true,
       "createdAtMs": 1774712775475,
-      "updatedAtMs": 1774712775475,
+      "updatedAtMs": 1774926005581,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * 2"
@@ -182,7 +118,14 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1774926000000
+        "nextRunAtMs": 1775530800000,
+        "lastRunAtMs": 1774926000010,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 5571,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -191,7 +134,7 @@
       "description": "Проверка gateway каждые 5 минут",
       "enabled": true,
       "createdAtMs": 1774712794763,
-      "updatedAtMs": 1774846740555,
+      "updatedAtMs": 1774933188896,
       "schedule": {
         "kind": "every",
         "everyMs": 300000,
@@ -208,11 +151,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1774847024748,
-        "lastRunAtMs": 1774846724748,
+        "nextRunAtMs": 1774933476182,
+        "lastRunAtMs": 1774933176182,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 15807,
+        "lastDurationMs": 12714,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -224,7 +167,7 @@
       "description": "Форлакс каждый день 8:30 КРС",
       "enabled": true,
       "createdAtMs": 1774712808550,
-      "updatedAtMs": 1774834217818,
+      "updatedAtMs": 1774920603134,
       "schedule": {
         "kind": "cron",
         "expr": "30 1 * * *"
@@ -241,14 +184,16 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1774920600000,
-        "lastRunAtMs": 1774834200005,
+        "nextRunAtMs": 1775007000000,
+        "lastRunAtMs": 1774920600013,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 17813,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "Error: Outbound not configured for channel: telegram"
+        "lastDurationMs": 3121,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 2,
+        "lastError": "⚠️ openrouter (anthropic/claude-opus-4.6) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your openrouter billing dashboard and top up or switch to a different API key.",
+        "lastErrorReason": "billing",
+        "lastDelivered": true
       }
     },
     {
@@ -338,7 +283,7 @@
       "description": "Маша ДЗ от психолога 21:00 КРС",
       "enabled": true,
       "createdAtMs": 1774713004585,
-      "updatedAtMs": 1774792844812,
+      "updatedAtMs": 1774879204333,
       "schedule": {
         "kind": "cron",
         "expr": "0 14 * * *"
@@ -355,14 +300,16 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1774879200000,
-        "lastRunAtMs": 1774792800011,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 44801,
+        "nextRunAtMs": 1774965600000,
+        "lastRunAtMs": 1774879200015,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 4318,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "⚠️ openrouter (anthropic/claude-opus-4.6) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your openrouter billing dashboard and top up or switch to a different API key.",
+        "lastErrorReason": "billing"
       }
     },
     {
@@ -371,7 +318,7 @@
       "description": "Маша психолог вторники март",
       "enabled": true,
       "createdAtMs": 1774713031739,
-      "updatedAtMs": 1774713031739,
+      "updatedAtMs": 1774929607012,
       "schedule": {
         "kind": "cron",
         "expr": "0 4 * 3 2"
@@ -388,7 +335,60 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1774929600000
+        "nextRunAtMs": 1803960000000,
+        "lastRunAtMs": 1774929600009,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 7003,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "859b3a48-16c8-4acf-83c9-7e5127eb5305",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:direct:401302949",
+      "name": "Забрать Алису",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774926548765,
+      "updatedAtMs": 1774926548765,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-31T05:30:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Скоро идти за Алисой! 🏫👧"
+      },
+      "state": {
+        "nextRunAtMs": 1774935000000
+      }
+    },
+    {
+      "id": "eff5e057-3ef3-4fe6-83d1-19a868efd3c1",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:direct:401302949",
+      "name": "Врач для Маши",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774930198732,
+      "updatedAtMs": 1774930198732,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-01T05:00:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Врач для Маши (педиатр) сегодня в 17:42! 🏥👩‍⚕️"
+      },
+      "state": {
+        "nextRunAtMs": 1775019600000
       }
     }
   ]
