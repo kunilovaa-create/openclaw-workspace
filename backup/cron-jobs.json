@@ -1,0 +1,395 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "db0828bc-aee8-4c8d-9ff5-c101a068cc8a",
+      "name": "cough-pill",
+      "description": "Таблетка от кашля 22:00 КРС",
+      "enabled": true,
+      "createdAtMs": 1774712694267,
+      "updatedAtMs": 1774882803984,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 15 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Выпей таблетку от кашля! 💊"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1774969200000,
+        "lastRunAtMs": 1774882800012,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 3972,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 1,
+        "lastError": "⚠️ openrouter (anthropic/claude-opus-4.6) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your openrouter billing dashboard and top up or switch to a different API key.",
+        "lastErrorReason": "billing"
+      }
+    },
+    {
+      "id": "480f2eb0-8e9c-4866-94a6-0972a1c17acb",
+      "name": "utility-meters",
+      "description": "Показания счётчиков 20-е число 11:00 КРС",
+      "enabled": true,
+      "createdAtMs": 1774712730888,
+      "updatedAtMs": 1774712730888,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 4 20 * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "ПОКАЗАНИЯ СЧЁТЧИКОВ!!!!!!! 💧🔥"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1776657600000
+      }
+    },
+    {
+      "id": "c5f51c01-07cc-42e5-895d-7d346eefc762",
+      "name": "daily-backup",
+      "description": "Тихий ежедневный бэкап, сообщать только об ошибках",
+      "enabled": true,
+      "createdAtMs": 1774712752239,
+      "updatedAtMs": 1774846823539,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 5 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Сделай бэкап: 1) cp /root/.openclaw/cron/jobs.json /root/.openclaw/workspace/backup/cron-jobs.json 2) cd /root/.openclaw/workspace && git add -A && git diff --cached --quiet || git commit -m 'daily backup' && git push origin master && git push origin master:main. Если всё ок — молчи. Если ошибка — напиши Анечке в Telegram (401302949) что бэкап не удался."
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1774933200000,
+        "lastRunAtMs": 1774846800014,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 23525,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "runningAtMs": 1774933200003
+      }
+    },
+    {
+      "id": "c3415c51-41af-4490-94de-f8b881a408d1",
+      "name": "alisa-school-tue",
+      "description": "Каждый вторник 10:00 КРС",
+      "enabled": true,
+      "createdAtMs": 1774712775475,
+      "updatedAtMs": 1774926005581,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * 2"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Алиса заканчивает учиться в 13:00! 🏫"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1775530800000,
+        "lastRunAtMs": 1774926000010,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 5571,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "a49c19b9-039b-4a1d-b6df-8a665d48fea8",
+      "name": "healthcheck",
+      "description": "Проверка gateway каждые 5 минут",
+      "enabled": true,
+      "createdAtMs": 1774712794763,
+      "updatedAtMs": 1774933188896,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 300000,
+        "anchorMs": 1774712794763
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Проверь жив ли gateway: запусти bash /root/.openclaw/healthcheck.sh. Если вывод содержит RESTART FAILED — напиши Анечке в Telegram (401302949) что gateway упал и не смог подняться. Если Gateway OK или успешно перезапустился — молчи."
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1774933476182,
+        "lastRunAtMs": 1774933176182,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 12714,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "2bd438ac-7954-49bd-8a3e-4f4c3001e08a",
+      "name": "masha-forlax",
+      "description": "Форлакс каждый день 8:30 КРС",
+      "enabled": true,
+      "createdAtMs": 1774712808550,
+      "updatedAtMs": 1774920603134,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 1 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Маше пить форлакс! 💊"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1775007000000,
+        "lastRunAtMs": 1774920600013,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 3121,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 2,
+        "lastError": "⚠️ openrouter (anthropic/claude-opus-4.6) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your openrouter billing dashboard and top up or switch to a different API key.",
+        "lastErrorReason": "billing",
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "84ec31af-73ab-4f9d-9456-d2dfd3564b09",
+      "name": "physed-cert",
+      "description": "Справка по физре",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774712828196,
+      "updatedAtMs": 1774712828196,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-05T05:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "15 апреля истекает справка по физре — записаться к эндокринологу 🏥"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1775365200000
+      }
+    },
+    {
+      "id": "8d39d924-3083-4062-8b43-38c2c5b07cd2",
+      "name": "masha-cyclovita",
+      "description": "Купить Маше Цикловита",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774712847424,
+      "updatedAtMs": 1774712847424,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-06T04:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Купи Маше Цикловита (второй месяц) 💊"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1775448000000
+      }
+    },
+    {
+      "id": "88f40ded-63b9-4515-823f-774aa0f9a59d",
+      "name": "polyoxidonium",
+      "description": "Начать пить полиоксидоний",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774712865535,
+      "updatedAtMs": 1774712865535,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-06-26T04:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Начать пить полиоксидоний 💊"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1782446400000
+      }
+    },
+    {
+      "id": "07a7ae12-3549-43be-a826-5c258030c168",
+      "name": "masha-psychologist-hw",
+      "description": "Маша ДЗ от психолога 21:00 КРС",
+      "enabled": true,
+      "createdAtMs": 1774713004585,
+      "updatedAtMs": 1774879204333,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 14 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Маше сделать ДЗ от психолога! 📝"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1774965600000,
+        "lastRunAtMs": 1774879200015,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 4318,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 1,
+        "lastError": "⚠️ openrouter (anthropic/claude-opus-4.6) returned a billing error — your API key has run out of credits or has an insufficient balance. Check your openrouter billing dashboard and top up or switch to a different API key.",
+        "lastErrorReason": "billing"
+      }
+    },
+    {
+      "id": "ea471fb4-99a4-410b-9ff4-33aad73c9b24",
+      "name": "masha-psychologist-tue",
+      "description": "Маша психолог вторники март",
+      "enabled": true,
+      "createdAtMs": 1774713031739,
+      "updatedAtMs": 1774929607012,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 4 * 3 2"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Маше сегодня к психологу в 16:00! 🧠"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1803960000000,
+        "lastRunAtMs": 1774929600009,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 7003,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "859b3a48-16c8-4acf-83c9-7e5127eb5305",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:direct:401302949",
+      "name": "Забрать Алису",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774926548765,
+      "updatedAtMs": 1774926548765,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-31T05:30:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Скоро идти за Алисой! 🏫👧"
+      },
+      "state": {
+        "nextRunAtMs": 1774935000000
+      }
+    },
+    {
+      "id": "eff5e057-3ef3-4fe6-83d1-19a868efd3c1",
+      "agentId": "main",
+      "sessionKey": "agent:main:telegram:direct:401302949",
+      "name": "Врач для Маши",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774930198732,
+      "updatedAtMs": 1774930198732,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-01T05:00:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Врач для Маши (педиатр) сегодня в 17:42! 🏥👩‍⚕️"
+      },
+      "state": {
+        "nextRunAtMs": 1775019600000
+      }
+    }
+  ]
+}
