@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1775114596078,
+      "updatedAtMs": 1775192411190,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,8 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1775192400000,
-        "runningAtMs": 1775192400001
+        "nextRunAtMs": 1775278800000,
+        "lastRunAtMs": 1775192400002,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 11188,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "runningAtMs": 1775278800002
       }
     },
     {
@@ -153,6 +160,31 @@
       },
       "state": {
         "nextRunAtMs": 1775448000000
+      }
+    },
+    {
+      "id": "4e94b2ff-214c-4f25-b519-c886eed3427e",
+      "name": "cough-pill-daily",
+      "enabled": true,
+      "createdAtMs": 1775270927258,
+      "updatedAtMs": 1775270927258,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 15 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Выпей таблетку от кашля! 💊"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1775314800000
       }
     }
   ]
