@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1775278811982,
+      "updatedAtMs": 1775365210869,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1775365200000,
-        "lastRunAtMs": 1775278800003,
+        "nextRunAtMs": 1775451600000,
+        "lastRunAtMs": 1775365200002,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 11979,
+        "lastDurationMs": 10867,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1775365200001
+        "runningAtMs": 1775451600001
       }
     },
     {
@@ -56,59 +56,6 @@
       },
       "state": {
         "nextRunAtMs": 1776657600000
-      }
-    },
-    {
-      "id": "22500581-0e09-4b78-89d9-a63f82ec6776",
-      "name": "physed-cert",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1775114638274,
-      "updatedAtMs": 1775114638274,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-04-05T05:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "15 апреля истекает справка по физре — записаться к эндокринологу 🏥"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1775365200000,
-        "runningAtMs": 1775365200001
-      }
-    },
-    {
-      "id": "a9f02af0-bf0b-429d-aa56-d2c66135da86",
-      "name": "masha-cyclovita",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1775114646685,
-      "updatedAtMs": 1775114646685,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-04-06T04:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Купи Маше Цикловита (второй месяц) 💊"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1775448000000
       }
     },
     {
@@ -138,37 +85,11 @@
       }
     },
     {
-      "id": "bbc70cda-d4da-4ad9-b250-5a82fec32aaf",
-      "name": "psychiatrist-apr6",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1775190879064,
-      "updatedAtMs": 1775190879064,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-04-06T04:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "психиатр у меня в 15:00 Бограда 89"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1775448000000
-      }
-    },
-    {
       "id": "4e94b2ff-214c-4f25-b519-c886eed3427e",
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1775314803742,
+      "updatedAtMs": 1775401203409,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -185,14 +106,118 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1775401200000,
-        "lastRunAtMs": 1775314800002,
+        "nextRunAtMs": 1775487600000,
+        "lastRunAtMs": 1775401200004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 3740,
+        "lastDurationMs": 3405,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "686e218a-97f4-4841-9c11-9e8ccb6be50e",
+      "name": "nervous-tic-reminder",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1775385572785,
+      "updatedAtMs": 1775385572785,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-06T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "скажи про нервный тик"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1775462400000
+      }
+    },
+    {
+      "id": "d23d7af8-3ce0-4e53-8df3-e5d9aa657ff3",
+      "name": "tell-leha-alisa",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1775448014403,
+      "updatedAtMs": 1775448014403,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-06T05:20:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "сказать Лехе что я пошла за Алисой 👧"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1775452800000
+      }
+    },
+    {
+      "id": "730c40db-f8f3-4e49-81ea-8c4f53af95c3",
+      "name": "masha-blood-test-reminder",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1775448045943,
+      "updatedAtMs": 1775448045943,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-06T11:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "завтра сдать кровь Маше 🩸"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1775473200000
+      }
+    },
+    {
+      "id": "546e114f-7c0b-4735-936b-2fa21d0f457b",
+      "name": "masha-blood-test-tomorrow",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1775448139941,
+      "updatedAtMs": 1775448139941,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-07T01:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Маше сдать кровь 🩸"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1775523600000
       }
     }
   ]
