@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1775365210869,
+      "updatedAtMs": 1775451610896,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1775451600000,
-        "lastRunAtMs": 1775365200002,
+        "nextRunAtMs": 1775538000000,
+        "lastRunAtMs": 1775451600002,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 10867,
+        "lastDurationMs": 10894,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1775451600001
+        "runningAtMs": 1775538000002
       }
     },
     {
@@ -89,7 +89,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1775401203409,
+      "updatedAtMs": 1775487604160,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -106,32 +106,32 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1775487600000,
-        "lastRunAtMs": 1775401200004,
+        "nextRunAtMs": 1775574000000,
+        "lastRunAtMs": 1775487600003,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 3405,
+        "lastDurationMs": 4157,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
       }
     },
     {
-      "id": "686e218a-97f4-4841-9c11-9e8ccb6be50e",
-      "name": "nervous-tic-reminder",
+      "id": "5c11b7d6-8601-41d9-bd84-9d622390a702",
+      "name": "fluoxetine-2pills",
       "enabled": true,
       "deleteAfterRun": true,
-      "createdAtMs": 1775385572785,
-      "updatedAtMs": 1775385572785,
+      "createdAtMs": 1775531555168,
+      "updatedAtMs": 1775531555168,
       "schedule": {
         "kind": "at",
-        "at": "2026-04-06T08:00:00.000Z"
+        "at": "2026-04-12T04:00:00.000Z"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "скажи про нервный тик"
+        "message": "пора пить по 2 таблетки флуоксетина 💊💊"
       },
       "delivery": {
         "mode": "announce",
@@ -139,85 +139,7 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1775462400000
-      }
-    },
-    {
-      "id": "d23d7af8-3ce0-4e53-8df3-e5d9aa657ff3",
-      "name": "tell-leha-alisa",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1775448014403,
-      "updatedAtMs": 1775448014403,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-04-06T05:20:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "сказать Лехе что я пошла за Алисой 👧"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1775452800000
-      }
-    },
-    {
-      "id": "730c40db-f8f3-4e49-81ea-8c4f53af95c3",
-      "name": "masha-blood-test-reminder",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1775448045943,
-      "updatedAtMs": 1775448045943,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-04-06T11:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "завтра сдать кровь Маше 🩸"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1775473200000
-      }
-    },
-    {
-      "id": "546e114f-7c0b-4735-936b-2fa21d0f457b",
-      "name": "masha-blood-test-tomorrow",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1775448139941,
-      "updatedAtMs": 1775448139941,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-04-07T01:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Маше сдать кровь 🩸"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1775523600000
+        "nextRunAtMs": 1775966400000
       }
     }
   ]
