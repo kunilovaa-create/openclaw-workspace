@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1775451610896,
+      "updatedAtMs": 1775538011912,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1775538000000,
-        "lastRunAtMs": 1775451600002,
+        "nextRunAtMs": 1775624400000,
+        "lastRunAtMs": 1775538000005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 10894,
+        "lastDurationMs": 11907,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1775538000002
+        "runningAtMs": 1775624400001
       }
     },
     {
@@ -89,7 +89,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1775487604160,
+      "updatedAtMs": 1775574003917,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -106,11 +106,11 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1775574000000,
-        "lastRunAtMs": 1775487600003,
+        "nextRunAtMs": 1775660400000,
+        "lastRunAtMs": 1775574000002,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 4157,
+        "lastDurationMs": 3915,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -140,6 +140,32 @@
       },
       "state": {
         "nextRunAtMs": 1775966400000
+      }
+    },
+    {
+      "id": "608facf3-697c-4215-9a3e-b1c22d44853a",
+      "name": "masha-physed-cert-apr9",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1775575145420,
+      "updatedAtMs": 1775575145420,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-09T09:49:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "справка от физры Маше 🏃‍♀️📋"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1775728140000
       }
     }
   ]
