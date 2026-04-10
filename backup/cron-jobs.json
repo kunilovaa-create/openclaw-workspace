@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1775624411849,
+      "updatedAtMs": 1775710811824,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1775710800000,
-        "lastRunAtMs": 1775624400002,
+        "nextRunAtMs": 1775797200000,
+        "lastRunAtMs": 1775710800003,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 11847,
+        "lastDurationMs": 11821,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1775710800002
+        "runningAtMs": 1775797200001
       }
     },
     {
@@ -89,7 +89,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1775660404327,
+      "updatedAtMs": 1775746804147,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -106,11 +106,11 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1775746800000,
-        "lastRunAtMs": 1775660400002,
+        "nextRunAtMs": 1775833200000,
+        "lastRunAtMs": 1775746800003,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 4325,
+        "lastDurationMs": 4144,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -143,32 +143,6 @@
       }
     },
     {
-      "id": "608facf3-697c-4215-9a3e-b1c22d44853a",
-      "name": "masha-physed-cert-apr9",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1775575145420,
-      "updatedAtMs": 1775575145420,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-04-09T09:49:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "справка от физры Маше 🏃‍♀️📋"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1775728140000
-      }
-    },
-    {
       "id": "09e568d1-9673-4b5c-8fb9-0f917f0d209c",
       "name": "schedule-masha-psychiatrist-june",
       "enabled": true,
@@ -195,21 +169,21 @@
       }
     },
     {
-      "id": "d755be86-93cb-4842-9488-3c6ab2687e9a",
-      "name": "tick-insurance",
+      "id": "7bb78709-81bf-435b-9e22-48a35d5d300a",
+      "name": "masha-pediatrician-physed-correct",
       "enabled": true,
       "deleteAfterRun": true,
-      "createdAtMs": 1775706178099,
-      "updatedAtMs": 1775706178099,
+      "createdAtMs": 1775731603302,
+      "updatedAtMs": 1775731603302,
       "schedule": {
         "kind": "at",
-        "at": "2026-04-09T06:42:00.000Z"
+        "at": "2026-04-13T03:00:00.000Z"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "застрахуйся от клещей 🕷️🛡️"
+        "message": "запишись к педиатру Машу за справкой от физ ры 👩‍⚕️📋"
       },
       "delivery": {
         "mode": "announce",
@@ -217,7 +191,7 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1775716920000
+        "nextRunAtMs": 1776049200000
       }
     }
   ]
