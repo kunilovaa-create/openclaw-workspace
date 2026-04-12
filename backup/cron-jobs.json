@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1775797212736,
+      "updatedAtMs": 1775883611412,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1775883600000,
-        "lastRunAtMs": 1775797200002,
+        "nextRunAtMs": 1775970000000,
+        "lastRunAtMs": 1775883600003,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 12734,
+        "lastDurationMs": 11409,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1775883600002
+        "runningAtMs": 1775970000001
       }
     },
     {
@@ -89,7 +89,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1775833204583,
+      "updatedAtMs": 1775919603900,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -106,40 +106,14 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1775919600000,
-        "lastRunAtMs": 1775833200005,
+        "nextRunAtMs": 1776006000000,
+        "lastRunAtMs": 1775919600002,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 4578,
+        "lastDurationMs": 3898,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "5c11b7d6-8601-41d9-bd84-9d622390a702",
-      "name": "fluoxetine-2pills",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1775531555168,
-      "updatedAtMs": 1775531555168,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-04-12T04:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "пора пить по 2 таблетки флуоксетина 💊💊"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1775966400000
       }
     },
     {
