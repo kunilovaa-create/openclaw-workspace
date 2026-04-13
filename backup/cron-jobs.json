@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1775883611412,
+      "updatedAtMs": 1775970013950,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1775970000000,
-        "lastRunAtMs": 1775883600003,
+        "nextRunAtMs": 1776056400000,
+        "lastRunAtMs": 1775970000002,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 11409,
+        "lastDurationMs": 13948,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1775970000001
+        "runningAtMs": 1776056400002
       }
     },
     {
@@ -89,7 +89,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1775919603900,
+      "updatedAtMs": 1776006004774,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -106,11 +106,11 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1776006000000,
-        "lastRunAtMs": 1775919600002,
+        "nextRunAtMs": 1776092400000,
+        "lastRunAtMs": 1776006000005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 3898,
+        "lastDurationMs": 4769,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -143,21 +143,21 @@
       }
     },
     {
-      "id": "7bb78709-81bf-435b-9e22-48a35d5d300a",
-      "name": "masha-pediatrician-physed-correct",
+      "id": "dd20ccce-7c3a-4579-bc88-31a57490eb60",
+      "name": "call-reminder-8pm",
       "enabled": true,
       "deleteAfterRun": true,
-      "createdAtMs": 1775731603302,
-      "updatedAtMs": 1775731603302,
+      "createdAtMs": 1775975667034,
+      "updatedAtMs": 1775975667034,
       "schedule": {
         "kind": "at",
-        "at": "2026-04-13T03:00:00.000Z"
+        "at": "2026-04-14T04:00:00.000Z"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "запишись к педиатру Машу за справкой от физ ры 👩‍⚕️📋"
+        "message": "сегодня созвон в 20:00 📞"
       },
       "delivery": {
         "mode": "announce",
@@ -165,7 +165,7 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1776049200000
+        "nextRunAtMs": 1776139200000
       }
     }
   ]
