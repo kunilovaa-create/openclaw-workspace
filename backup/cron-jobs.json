@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1775970013950,
+      "updatedAtMs": 1776056411558,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1776056400000,
-        "lastRunAtMs": 1775970000002,
+        "nextRunAtMs": 1776142800000,
+        "lastRunAtMs": 1776056400005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 13948,
+        "lastDurationMs": 11553,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776056400002
+        "runningAtMs": 1776142800002
       }
     },
     {
@@ -89,7 +89,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1776006004774,
+      "updatedAtMs": 1776092404224,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -106,11 +106,11 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1776092400000,
-        "lastRunAtMs": 1776006000005,
+        "nextRunAtMs": 1776178800000,
+        "lastRunAtMs": 1776092400002,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 4769,
+        "lastDurationMs": 4222,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -140,32 +140,6 @@
       },
       "state": {
         "nextRunAtMs": 1779076800000
-      }
-    },
-    {
-      "id": "dd20ccce-7c3a-4579-bc88-31a57490eb60",
-      "name": "call-reminder-8pm",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1775975667034,
-      "updatedAtMs": 1775975667034,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-04-14T04:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "сегодня созвон в 20:00 📞"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1776139200000
       }
     }
   ]
