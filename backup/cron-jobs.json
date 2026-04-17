@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1776229210120,
+      "updatedAtMs": 1776315611358,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1776315600000,
-        "lastRunAtMs": 1776229200002,
+        "nextRunAtMs": 1776402000000,
+        "lastRunAtMs": 1776315600004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 10118,
+        "lastDurationMs": 11354,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776315600003
+        "runningAtMs": 1776402000003
       }
     },
     {
@@ -89,7 +89,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1776265203551,
+      "updatedAtMs": 1776351603932,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -106,11 +106,11 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1776351600000,
-        "lastRunAtMs": 1776265200004,
+        "nextRunAtMs": 1776438000000,
+        "lastRunAtMs": 1776351600002,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 3547,
+        "lastDurationMs": 3930,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -166,6 +166,31 @@
       },
       "state": {
         "nextRunAtMs": 1776819600000
+      }
+    },
+    {
+      "id": "a55f2405-1739-49ba-acd7-aae93df13ecc",
+      "name": "alisa-lunch-reminder",
+      "enabled": true,
+      "createdAtMs": 1776328624779,
+      "updatedAtMs": 1776328624779,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * 2,4"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "пора Алисе есть. До 15 надо поесть 🍽️👧"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1776751200000
       }
     }
   ]
