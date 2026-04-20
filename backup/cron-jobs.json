@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1776488411009,
+      "updatedAtMs": 1776574812374,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1776574800000,
-        "lastRunAtMs": 1776488400003,
+        "nextRunAtMs": 1776661200000,
+        "lastRunAtMs": 1776574800004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 11006,
+        "lastDurationMs": 12370,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776574800003
+        "runningAtMs": 1776661200002
       }
     },
     {
@@ -38,7 +38,7 @@
       "name": "utility-meters",
       "enabled": true,
       "createdAtMs": 1775114629663,
-      "updatedAtMs": 1775114629663,
+      "updatedAtMs": 1776657610987,
       "schedule": {
         "kind": "cron",
         "expr": "0 4 20 * *"
@@ -55,7 +55,14 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1776657600000
+        "nextRunAtMs": 1779249600000,
+        "lastRunAtMs": 1776657600002,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 10985,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -89,7 +96,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1776524404946,
+      "updatedAtMs": 1776610803874,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -106,11 +113,11 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1776610800000,
-        "lastRunAtMs": 1776524400003,
+        "nextRunAtMs": 1776697200000,
+        "lastRunAtMs": 1776610800002,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 4943,
+        "lastDurationMs": 3872,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -191,32 +198,6 @@
       },
       "state": {
         "nextRunAtMs": 1776751200000
-      }
-    },
-    {
-      "id": "cca16c58-a07d-4ebb-ba38-c37834d82d65",
-      "name": "masha-body-drawing-exercise",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1776525503276,
-      "updatedAtMs": 1776525503276,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-04-19T06:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Маше показать нарисовать ее тело и что с ним станет 👧🎨"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1776578400000
       }
     }
   ]
