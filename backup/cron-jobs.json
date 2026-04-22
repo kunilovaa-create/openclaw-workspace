@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1776661214027,
+      "updatedAtMs": 1776747609928,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1776747600000,
-        "lastRunAtMs": 1776661200003,
+        "nextRunAtMs": 1776834000000,
+        "lastRunAtMs": 1776747600004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 14024,
+        "lastDurationMs": 9924,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776747600003
+        "runningAtMs": 1776834000005
       }
     },
     {
@@ -96,7 +96,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1776697204900,
+      "updatedAtMs": 1776783604546,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -113,11 +113,11 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1776783600000,
-        "lastRunAtMs": 1776697200003,
+        "nextRunAtMs": 1776870000000,
+        "lastRunAtMs": 1776783600002,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 4897,
+        "lastDurationMs": 4544,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -150,37 +150,11 @@
       }
     },
     {
-      "id": "52480d9a-e3b2-42e7-ab3f-509759f085b8",
-      "name": "masha-pediatrician-1036",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1776231468178,
-      "updatedAtMs": 1776231468178,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-04-22T01:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "педиатр для справки Маше в 10.36 👩‍⚕️📋"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1776819600000
-      }
-    },
-    {
       "id": "a55f2405-1739-49ba-acd7-aae93df13ecc",
       "name": "alisa-lunch-reminder",
       "enabled": true,
       "createdAtMs": 1776328624779,
-      "updatedAtMs": 1776328624779,
+      "updatedAtMs": 1776751206197,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * 2,4"
@@ -197,7 +171,14 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1776751200000
+        "nextRunAtMs": 1776924000000,
+        "lastRunAtMs": 1776751200003,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 6194,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     }
   ]
