@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1776747609928,
+      "updatedAtMs": 1776834011183,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1776834000000,
-        "lastRunAtMs": 1776747600004,
+        "nextRunAtMs": 1776920400000,
+        "lastRunAtMs": 1776834000006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 9924,
+        "lastDurationMs": 11177,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776834000005
+        "runningAtMs": 1776920400001
       }
     },
     {
@@ -96,7 +96,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1776783604546,
+      "updatedAtMs": 1776870004438,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -113,11 +113,11 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1776870000000,
-        "lastRunAtMs": 1776783600002,
+        "nextRunAtMs": 1776956400000,
+        "lastRunAtMs": 1776870000004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 4544,
+        "lastDurationMs": 4434,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -179,6 +179,32 @@
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "eec6f164-d59a-4fa9-83e0-287d4bc0dc9b",
+      "name": "alisa-parent-meeting",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1776904491940,
+      "updatedAtMs": 1776904491940,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-23T09:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "родительское собрание у Алисы в 18:30 🏫👩‍👧‍👦"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1776934800000
       }
     }
   ]
