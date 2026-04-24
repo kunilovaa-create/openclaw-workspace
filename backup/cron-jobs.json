@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1776834011183,
+      "updatedAtMs": 1776920411748,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1776920400000,
-        "lastRunAtMs": 1776834000006,
+        "nextRunAtMs": 1777006800000,
+        "lastRunAtMs": 1776920400002,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 11177,
+        "lastDurationMs": 11746,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776920400001
+        "runningAtMs": 1777006800001
       }
     },
     {
@@ -96,7 +96,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1776870004438,
+      "updatedAtMs": 1776956404292,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -113,11 +113,11 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1776956400000,
-        "lastRunAtMs": 1776870000004,
+        "nextRunAtMs": 1777042800000,
+        "lastRunAtMs": 1776956400003,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 4434,
+        "lastDurationMs": 4289,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -154,7 +154,7 @@
       "name": "alisa-lunch-reminder",
       "enabled": true,
       "createdAtMs": 1776328624779,
-      "updatedAtMs": 1776751206197,
+      "updatedAtMs": 1776924006682,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * 2,4"
@@ -171,40 +171,14 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1776924000000,
-        "lastRunAtMs": 1776751200003,
+        "nextRunAtMs": 1777356000000,
+        "lastRunAtMs": 1776924000002,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 6194,
+        "lastDurationMs": 6680,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "eec6f164-d59a-4fa9-83e0-287d4bc0dc9b",
-      "name": "alisa-parent-meeting",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1776904491940,
-      "updatedAtMs": 1776904491940,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-04-23T09:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "родительское собрание у Алисы в 18:30 🏫👩‍👧‍👦"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1776934800000
       }
     }
   ]
