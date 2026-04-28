@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1777179615477,
+      "updatedAtMs": 1777266011405,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1777266000000,
-        "lastRunAtMs": 1777179600002,
+        "nextRunAtMs": 1777352400000,
+        "lastRunAtMs": 1777266000002,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 15475,
+        "lastDurationMs": 11403,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1777266000001
+        "runningAtMs": 1777352400004
       }
     },
     {
@@ -96,7 +96,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1777215605343,
+      "updatedAtMs": 1777302004046,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -113,11 +113,11 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1777302000000,
-        "lastRunAtMs": 1777215600001,
+        "nextRunAtMs": 1777388400000,
+        "lastRunAtMs": 1777302000003,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 5342,
+        "lastDurationMs": 4043,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -179,6 +179,32 @@
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "00aec05d-7646-4cf9-b6ce-faeac66fee3c",
+      "name": "pediatrician-reminder-may7",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1777349536805,
+      "updatedAtMs": 1777349536805,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-05-06T04:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "завтра 7 мая в 12:30 приём у педиатра 👩‍⚕️"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "401302949"
+      },
+      "state": {
+        "nextRunAtMs": 1778040000000
       }
     }
   ]
