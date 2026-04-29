@@ -6,7 +6,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1775114596078,
-      "updatedAtMs": 1777266011405,
+      "updatedAtMs": 1777352411389,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -22,15 +22,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1777352400000,
-        "lastRunAtMs": 1777266000002,
+        "nextRunAtMs": 1777438800000,
+        "lastRunAtMs": 1777352400005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 11403,
+        "lastDurationMs": 11384,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1777352400004
+        "runningAtMs": 1777438800002
       }
     },
     {
@@ -96,7 +96,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1775270927258,
-      "updatedAtMs": 1777302004046,
+      "updatedAtMs": 1777388403908,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -113,11 +113,11 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1777388400000,
-        "lastRunAtMs": 1777302000003,
+        "nextRunAtMs": 1777474800000,
+        "lastRunAtMs": 1777388400003,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 4043,
+        "lastDurationMs": 3905,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -154,7 +154,7 @@
       "name": "alisa-lunch-reminder",
       "enabled": true,
       "createdAtMs": 1776328624779,
-      "updatedAtMs": 1776924006682,
+      "updatedAtMs": 1777356013153,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * 2,4"
@@ -171,14 +171,15 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1777356000000,
-        "lastRunAtMs": 1776924000002,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 6680,
+        "nextRunAtMs": 1777528800000,
+        "lastRunAtMs": 1777356000003,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 13150,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "⚠️ ✉️ Message failed"
       }
     },
     {
