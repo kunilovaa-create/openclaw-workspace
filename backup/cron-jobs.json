@@ -2,11 +2,13 @@
   "version": 1,
   "jobs": [
     {
-      "id": "2147c95d-070c-4385-87de-9305c44d5957",
+      "id": "348f23dd-9802-4d16-8437-57ef734f8bf1",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
       "name": "daily-backup",
       "enabled": true,
-      "createdAtMs": 1775114596078,
-      "updatedAtMs": 1777352411389,
+      "createdAtMs": 1778253344870,
+      "updatedAtMs": 1778253344870,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -18,27 +20,20 @@
         "message": "Сделай бэкап: 1) cp /root/.openclaw/cron/jobs.json /root/.openclaw/workspace/backup/cron-jobs.json 2) cd /root/.openclaw/workspace && git add -A && git diff --cached --quiet || git commit -m 'daily backup' && git push origin master && git push origin master:main. Если всё ок — молчи. Если ошибка — напиши Анечке в Telegram (401302949) что бэкап не удался."
       },
       "delivery": {
-        "mode": "none",
-        "channel": "last"
+        "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1777438800000,
-        "lastRunAtMs": 1777352400005,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 11384,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1777438800002
+        "nextRunAtMs": 1778302800000
       }
     },
     {
-      "id": "ca118b55-58bf-479b-b5c1-86e97acf96d8",
+      "id": "9139e4f4-b96c-4182-8782-f2662aad0ed8",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
       "name": "utility-meters",
       "enabled": true,
-      "createdAtMs": 1775114629663,
-      "updatedAtMs": 1776657610987,
+      "createdAtMs": 1778253344914,
+      "updatedAtMs": 1778253344914,
       "schedule": {
         "kind": "cron",
         "expr": "0 4 20 * *"
@@ -55,23 +50,18 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1779249600000,
-        "lastRunAtMs": 1776657600002,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 10985,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1779249600000
       }
     },
     {
-      "id": "96577e80-4818-4c3d-a10c-d45c8beb00da",
+      "id": "6dc60eae-3cd3-47ac-ba32-57196fe2a701",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
       "name": "polyoxidonium",
       "enabled": true,
       "deleteAfterRun": true,
-      "createdAtMs": 1775114654650,
-      "updatedAtMs": 1775114654650,
+      "createdAtMs": 1778253344944,
+      "updatedAtMs": 1778253344944,
       "schedule": {
         "kind": "at",
         "at": "2026-06-26T04:00:00.000Z"
@@ -92,11 +82,13 @@
       }
     },
     {
-      "id": "4e94b2ff-214c-4f25-b519-c886eed3427e",
+      "id": "849d879c-f6d1-421d-a42e-0ebcf094a706",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
       "name": "cough-pill-daily",
       "enabled": true,
-      "createdAtMs": 1775270927258,
-      "updatedAtMs": 1777388403908,
+      "createdAtMs": 1778253344979,
+      "updatedAtMs": 1778253344979,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -113,23 +105,18 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1777474800000,
-        "lastRunAtMs": 1777388400003,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 3905,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1778338800000
       }
     },
     {
-      "id": "09e568d1-9673-4b5c-8fb9-0f917f0d209c",
+      "id": "5b6b5e90-2d63-468a-baf5-a4bfefed9f5b",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
       "name": "schedule-masha-psychiatrist-june",
       "enabled": true,
       "deleteAfterRun": true,
-      "createdAtMs": 1775625063922,
-      "updatedAtMs": 1775625063922,
+      "createdAtMs": 1778253345006,
+      "updatedAtMs": 1778253345006,
       "schedule": {
         "kind": "at",
         "at": "2026-05-18T04:00:00.000Z"
@@ -150,11 +137,13 @@
       }
     },
     {
-      "id": "a55f2405-1739-49ba-acd7-aae93df13ecc",
+      "id": "0a3fd30e-e532-49be-95c7-f88218caa667",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
       "name": "alisa-lunch-reminder",
       "enabled": true,
-      "createdAtMs": 1776328624779,
-      "updatedAtMs": 1777356013153,
+      "createdAtMs": 1778253345034,
+      "updatedAtMs": 1778253345034,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * 2,4"
@@ -171,41 +160,7 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1777528800000,
-        "lastRunAtMs": 1777356000003,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 13150,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastError": "⚠️ ✉️ Message failed"
-      }
-    },
-    {
-      "id": "00aec05d-7646-4cf9-b6ce-faeac66fee3c",
-      "name": "pediatrician-reminder-may7",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1777349536805,
-      "updatedAtMs": 1777349536805,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-05-06T04:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "завтра 7 мая в 12:30 приём у педиатра 👩‍⚕️"
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "401302949"
-      },
-      "state": {
-        "nextRunAtMs": 1778040000000
+        "nextRunAtMs": 1778565600000
       }
     }
   ]
