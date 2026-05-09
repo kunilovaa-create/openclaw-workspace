@@ -23,7 +23,8 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1778302800000
+        "nextRunAtMs": 1778302800000,
+        "runningAtMs": 1778302800001
       }
     },
     {
