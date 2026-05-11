@@ -8,7 +8,7 @@
       "name": "daily-backup",
       "enabled": true,
       "createdAtMs": 1778253344870,
-      "updatedAtMs": 1778302812773,
+      "updatedAtMs": 1778389212788,
       "schedule": {
         "kind": "cron",
         "expr": "0 5 * * *"
@@ -23,15 +23,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1778389200000,
-        "lastRunAtMs": 1778302800009,
+        "nextRunAtMs": 1778475600000,
+        "lastRunAtMs": 1778389200005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 12764,
+        "lastDurationMs": 12783,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1778389200002
+        "runningAtMs": 1778475600004
       }
     },
     {
@@ -96,7 +96,7 @@
       "name": "cough-pill-daily",
       "enabled": true,
       "createdAtMs": 1778253344979,
-      "updatedAtMs": 1778338804677,
+      "updatedAtMs": 1778425204025,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *"
@@ -113,11 +113,11 @@
         "to": "401302949"
       },
       "state": {
-        "nextRunAtMs": 1778425200000,
-        "lastRunAtMs": 1778338800003,
+        "nextRunAtMs": 1778511600000,
+        "lastRunAtMs": 1778425200006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 4674,
+        "lastDurationMs": 4019,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
